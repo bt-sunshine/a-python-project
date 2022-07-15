@@ -12,7 +12,7 @@ def show_score():
 
 if len(attempts_list) <= 0:
 
-print("There is currently no high score, it's yours for the taking!")
+print("There is currently no high score, play and you'll be the champion!")
 
 else:
 
@@ -22,13 +22,11 @@ def start_game():
 
 random_number = int(random.randint(1, 10))
 
-print("Hello traveler! Welcome to the game of guesses!")
+print("Hello! Welcome to the number guessing game!")
 
 player_name = input("What is your name? ")
 
 wanna_play = input("Hi, {}, would you like to play the guessing game? (Enter Yes/No) ".format(player_name))
-
-# Where the show_score function USED to be
 
 attempts = 0
 
@@ -64,7 +62,7 @@ random_number = int(random.randint(1, 10))
 
 if play_again.lower() == "no":
 
-print("That's cool, have a good one!")
+print("Bye, see you again!")
 
 break
 
@@ -88,7 +86,7 @@ print("({})".format(err))
 
 else:
 
-print("That's cool, have a good one!")
+print("Bye, see you again!")
 
 if __name__ == '__main__':
 
